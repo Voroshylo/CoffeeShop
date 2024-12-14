@@ -28,7 +28,7 @@ body {
 }
 
 .container {
-  max-width: 1920px;
+  max-width: 100%;
   margin: 0 auto;
   padding-left: 375px;
   padding-right: 375px;
@@ -79,8 +79,8 @@ body {
 
 /* hero */
 .hero {
-  max-width: 1920px;
-  height: 739px;
+  max-width: 100%; /* Забезпечує максимальну ширину */
+  height: 739px; /* Встановлює висоту на всю висоту вікна */
   background-image: linear-gradient(
       179deg,
       rgba(1, 1, 2, 0) 37.52%,
@@ -99,8 +99,12 @@ body {
     ),
     url(<path-to-image>) lightgray 50% / cover no-repeat; */
 }
+
 .div-hero {
   display: inline-flex;
+  align-items: center; /* Вирівнюємо по центру */
+  justify-content: center; /* Вирівнюємо вертикально по центру */
+  height: 100%; /* Займає всю висоту героя */
 }
 .div-hero-text {
   max-width: 585px;
@@ -149,7 +153,6 @@ body {
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-  padding-left: 490px;
 }
 .hero-a-play {
   color: #fff;
