@@ -39,10 +39,9 @@ body {
 .header {
 }
 .div-header {
-  /* max-width: 1920px; */
-  padding: 32px 200px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 1440px;
+  padding: 32px 93px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   gap: 48px;
@@ -79,7 +78,11 @@ body {
 
 /* hero */
 .hero {
-  max-width: 100%; /* Забезпечує максимальну ширину */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%; /* Забезпечує максимальну ширину */
   height: 739px; /* Встановлює висоту на всю висоту вікна */
   background-image: linear-gradient(
       179deg,
@@ -87,8 +90,6 @@ body {
       rgba(1, 1, 2, 0.41) 95.35%
     ),
     url(./images/hero.jpg);
-  margin-left: auto;
-  margin-right: auto;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -101,10 +102,10 @@ body {
 }
 
 .div-hero {
-  display: inline-flex;
-  align-items: center; /* Вирівнюємо по центру */
-  justify-content: center; /* Вирівнюємо вертикально по центру */
-  height: 100%; /* Займає всю висоту героя */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
 }
 .div-hero-text {
   width: 585px;
@@ -150,9 +151,7 @@ body {
 .div-hero-play {
   width: 585px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 auto;
+  justify-content: end;
 }
 .hero-a-play {
   color: #fff;
@@ -507,4 +506,207 @@ body {
   font-weight: 600;
   line-height: normal;
   margin-left: 117px;
+}
+
+/* reviews */
+.reviews {
+  padding-top: 140px;
+}
+
+.div-reviews-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 56px;
+}
+.reviews-p {
+  color: #c99e71;
+  font-family: Urbanist;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.reviews-h2 {
+  color: #fff;
+  font-family: Righteous;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 62.4px */
+}
+.div-reviews-card {
+}
+.reviews-ul {
+  display: flex;
+  gap: 40px;
+}
+.reviews-li {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  width: 565px;
+  height: 305px;
+  background: #1c1814;
+  padding: 40px 40px 37px 40px;
+}
+.div-reviews-li-img {
+  display: flex;
+  gap: 24px;
+}
+.reviews-img {
+  width: 129px;
+  height: 149px;
+}
+.rewiews-card-p {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: Urbanist;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 180%; /* 28.8px */
+  text-transform: capitalize;
+}
+.reviews-li-sub {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.reviews-sub-h3 {
+  color: #fff;
+  text-align: center;
+  font-family: Urbanist;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 21.6px */
+}
+.reviews-sub-p {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Urbanist;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 180%; /* 25.2px */
+  text-transform: capitalize;
+  opacity: 0.8;
+}
+.div-reviews-botom {
+  display: flex;
+  gap: 16px;
+  justify-content: end;
+  margin-top: 36px;
+}
+.reviews-btn-left {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: none;
+  background-color: #121315;
+}
+.reviews-btn-right-svg {
+  fill: white;
+  stroke: #fff;
+  width: 24px;
+  height: 24px;
+}
+.reviews-btn-right {
+  width: 56px;
+  height: 56px;
+  background-color: #c99e71;
+  border-radius: 50%;
+  border: none;
+}
+.reviews-btn-left-svg {
+  fill: none;
+  stroke: black;
+  width: 24px;
+  height: 24px;
+}
+
+/* booking */
+.booking {
+  padding-top: 140px;
+}
+.div-booking {
+  display: flex;
+}
+.div-booking-img {
+}
+.booking-map-img {
+  width: 100%;
+  height: 100%;
+}
+.div-booking-reserv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #1c1814;
+  padding: 72px 48px;
+}
+.booking-p {
+  color: #c99e71;
+  font-family: Urbanist;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.booking-h2 {
+  color: #fff;
+  font-family: Righteous;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 12px;
+}
+.div-booking-input {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 56px;
+  margin-bottom: 56px;
+}
+.booking-input {
+  width: 489px;
+  height: 64px;
+  background: #14110e;
+  border: 1px solid #14110e;
+  border-radius: 10px;
+  color: #c99e71;
+  transition: border-color 0.3s ease;
+  padding-left: 20px;
+  &:hover,
+  &:focus {
+    border-color: #c99e71;
+    outline: none;
+  }
+}
+.booking-btn {
+  background: #c99e71;
+  width: 202px;
+  height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+input[type="date"],
+input[type="time"] {
+  color: #c99e71;
+}
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator {
+  filter: sepia(80%) saturate(500%) hue-rotate(25deg) brightness(1.2);
+  cursor: pointer;
 }
