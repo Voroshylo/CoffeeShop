@@ -8,6 +8,20 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@3.0.1/modern-normalize.min.css"
     />
+    <link rel="preconnect" href="https://rsms.me/" />
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
@@ -17,10 +31,10 @@
   <body>
     <header class="header">
       <div class="div-header">
-        <a class="header-a" href="">Home</a>
-        <a class="header-a" href="">About</a>
-        <a class="header-a" href="">Menu</a>
-        <a class="header-a" href="">Reservation</a>
+        <a class="header-a" href="./index.html" target="_blank">Home</a>
+        <a class="header-a" href="#hero">About</a>
+        <a class="header-a" href="#menu">Menu</a>
+        <a class="header-a" href="#booking">Reservation</a>
         <a class="logo" href="./index.html">
           <svg class="header-svg-logo" width="72" height="60">
             <use
@@ -29,15 +43,15 @@
             ></use>
           </svg>
         </a>
-        <a class="header-a" href="">Pages</a>
-        <a class="header-a" href="">Shop</a>
-        <a class="header-a" href="">Contact</a>
+        <a class="header-a" href="#machine">Pages</a>
+        <a class="header-a" href="#product">Shop</a>
+        <a class="header-a" href="#footer">Contact</a>
         <a class="header-p" href="">search</a>
         <a class="header-p" href="">shopping_bag</a>
       </div>
     </header>
     <main>
-      <section class="hero">
+      <section class="hero" id="hero">
         <div class="container div-hero">
           <!-- <div class="div-hero"> -->
           <div class="div-hero-text">
@@ -58,13 +72,11 @@
               </svg>
               Play video
             </a>
-
-            <!-- <p class="hero-p-play">Play video</p> -->
           </div>
-          <!-- </div> -->
         </div>
       </section>
-      <section class="procces">
+      <!-- procces -->
+      <section class="procces" id="procces">
         <div class="container">
           <ul class="procces-ul">
             <li class="procces-li">
@@ -112,7 +124,8 @@
           </ul>
         </div>
       </section>
-      <section class="history">
+      <!-- history -->
+      <section class="history" id="history">
         <div class="container div-history">
           <div class="div-history-img">
             <picture>
@@ -163,7 +176,7 @@
       </section>
 
       <!-- product -->
-      <section class="product">
+      <section class="product" id="product">
         <div class="container div-product">
           <div class="div-product-text">
             <p class="product-p-firs">Popular Product</p>
@@ -292,7 +305,8 @@
           <button class="product-btn" type="button">View all product</button>
         </div>
       </section>
-      <section class="machine">
+      <!-- machine -->
+      <section class="machine" id="machine">
         <div class="container">
           <div class="div-machine">
             <div class="div-machine-img">
@@ -317,7 +331,7 @@
         </div>
       </section>
       <!-- menu -->
-      <section class="menu">
+      <section class="menu" id="menu">
         <div class="container">
           <div class="div-menu-text">
             <p class="menu-p">Menu</p>
@@ -455,7 +469,7 @@
         </div>
       </section>
       <!-- reviews -->
-      <section class="reviews">
+      <section class="reviews" id="reviews">
         <div class="container">
           <div class="div-reviews-text">
             <p class="reviews-p">Testimonial</p>
@@ -526,7 +540,7 @@
         </div>
       </section>
       <!-- booking -->
-      <section class="booking">
+      <section class="booking" id="booking">
         <div class="container div-booking">
           <div class="div-booking-img">
             <picture>
@@ -550,7 +564,144 @@
           </div>
         </div>
       </section>
+      <!-- latest -->
+      <section class="latest" id="latest">
+        <div class="container">
+          <div class="div-latest-text">
+            <p class="latest-p">Testimonial</p>
+            <h2 class="latest-h2">Our latest news</h2>
+          </div>
+
+          <ul class="latest-ul">
+            <li class="latest-li">
+              <img
+                class="latest-img"
+                srcset="./images/test1.jpg 1x, ./images/test1@2.jpg 2x"
+                src="./images/test1.jpg"
+                alt="cup"
+              />
+              <div class="div-latest-li-card">
+                <div class="div-latest-li-text">
+                  <p class="latest-li-p">
+                    <span class="latest-li-p-span">By:</span>rasaline
+                  </p>
+                  <p class="latest-li-date">15.12.2024</p>
+                </div>
+                <h3 class="latest-li-card-h3">
+                  Ideal cocktails from barmen....
+                </h3>
+                <a class="latest-li-card-a" href=""
+                  >Read More
+                  <svg class="latest-li-card-svg">
+                    <use href="./images/icon.svg#icon-right"></use>
+                  </svg>
+                </a>
+              </div>
+            </li>
+            <li class="latest-li">
+              <img
+                class="latest-img"
+                srcset="./images/test2.jpg 1x, ./images/test2@2.jpg 2x"
+                src="./images/test1.jpg"
+                alt="cup"
+              />
+              <div class="div-latest-li-card">
+                <div class="div-latest-li-text">
+                  <p class="latest-li-p">
+                    <span class="latest-li-p-span">By:</span>rasaline
+                  </p>
+                  <p class="latest-li-date">15.12.2024</p>
+                </div>
+                <h3 class="latest-li-card-h3">
+                  Ideal cocktails from barmen....
+                </h3>
+                <a class="latest-li-card-a" href=""
+                  >Read More
+                  <svg class="latest-li-card-svg">
+                    <use href="./images/icon.svg#icon-right"></use>
+                  </svg>
+                </a>
+              </div>
+            </li>
+            <li class="latest-li">
+              <img
+                class="latest-img"
+                srcset="./images/procces1.jpg 1x, ./images/procces1@2.jpg 2x"
+                src="./images/procces1.jpg"
+                alt="cup"
+              />
+              <div class="div-latest-li-card">
+                <div class="div-latest-li-text">
+                  <p class="latest-li-p">
+                    <span class="latest-li-p-span">By:</span>rasaline
+                  </p>
+                  <p class="latest-li-date">15.12.2024</p>
+                </div>
+                <h3 class="latest-li-card-h3">
+                  Ideal cocktails from barmen....
+                </h3>
+                <a class="latest-li-card-a" href=""
+                  >Read More
+                  <svg class="latest-li-card-svg">
+                    <use href="./images/icon.svg#icon-right"></use>
+                  </svg>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
-    <footer></footer>
+    <!-- footer -->
+    <footer class="footer" id="footer">
+      <div class="container div-footer">
+        <a class="logo-footer" href="./index.html">
+          <svg class="footer-svg-logo" width="72" height="60">
+            <use
+              href="./images/icon.svg#icon-Logo"
+              class="footer-icon-logo"
+            ></use>
+          </svg>
+          <ul class="footer-ul">
+            <li class="footer-li">
+              <a class="footer-li-a" href="./index.html">Home</a>
+            </li>
+            <li class="footer-li">
+              <a class="footer-li-a" href="#booking">Rerervation</a>
+            </li>
+            <li class="footer-li">
+              <a class="footer-li-a" href="#menu">Menu</a>
+            </li>
+            <li class="footer-li">
+              <a class="footer-li-a" href="#hero">About</a>
+            </li>
+            <li class="footer-li">
+              <a class="footer-li-a" href="#machine">Pages</a>
+            </li>
+            <li class="footer-li">
+              <a class="footer-li-a" href="#product">Shop</a>
+            </li>
+            <li class="footer-li">
+              <a class="footer-li-a" href="#reviews">Blogs</a>
+            </li>
+          </ul>
+        </a>
+        <div class="div-footer-input">
+          <input
+            class="footer-input"
+            type="email"
+            placeholder="Enter Your Email"
+          />
+          <button class="footer-btn" type="submit">
+            <svg class="footer-input-svg">
+              <use href="./images/icon.svg#icon-right"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="div-footer-copy">
+        <p class="footer-copy">m-Soft © 2024. All rights reserved.</p>
+      </div>
+    </footer>
   </body>
 </html>
