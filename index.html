@@ -1,13 +1,734 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>CoffeeShop</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@3.0.1/modern-normalize.min.css"
+    />
+    <link rel="preconnect" href="https://rsms.me/" />
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link href="./src/style.css" rel="stylesheet" />
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
+    <header class="header">
+      <div class="div-header">
+        <a class="header-a" href="./index.html" target="_blank">Home</a>
+        <a class="header-a" href="#hero">About</a>
+        <a class="header-a" href="#menu">Menu</a>
+        <a class="header-a" href="#booking">Reservation</a>
+        <a class="logo" href="./index.html">
+          <svg class="header-svg-logo" width="72" height="60">
+            <use
+              href="./src/images/icon.svg#icon-Logo"
+              class="header-icon-logo"
+            ></use>
+          </svg>
+        </a>
+        <a class="header-a" href="#machine">Pages</a>
+        <a class="header-a" href="#product">Shop</a>
+        <a class="header-a" href="#footer">Contact</a>
+        <a class="header-p" href="">search</a>
+        <a class="header-p" href="">shopping_bag</a>
+      </div>
+    </header>
+    <main>
+      <section class="hero" id="hero">
+        <div class="container div-hero">
+          <!-- <div class="div-hero"> -->
+          <div class="div-hero-text">
+            <h1 class="hero-h1">Enjoy Your Morning Coffee.</h1>
+            <p class="hero-p">
+              The coofee is brewed by fist roasting the green coffee beans over
+              hot coals in brazier. given to Opportunity
+            </p>
+            <button class="hero-btn" type="button">Test Coffee</button>
+          </div>
+          <div class="div-hero-play">
+            <a href="" class="hero-a-play">
+              <svg class="hero-svg-play" width="70" height="70">
+                <use
+                  class="hero-icon-play"
+                  href="./src/images/icon.svg#icon-play"
+                ></use>
+              </svg>
+              Play video
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- procces -->
+      <section class="procces" id="procces">
+        <div class="container">
+          <ul class="procces-ul">
+            <li class="procces-li">
+              <h2 class="procces-li-h2">
+                <span class="procces-h2-span">01</span>Best Coffee Flavour
+              </h2>
+              <picture>
+                <img
+                  class="procces-img"
+                  srcset="
+                    ./src/images/procces1.jpg   1x,
+                    ./src/images/procces1@2.jpg 2x
+                  "
+                  src="./src/images/procces1.jpg"
+                  alt="cup"
+                  width="366"
+                />
+              </picture>
+            </li>
+            <li class="procces-li">
+              <h2 class="procces-li-h2">
+                <span class="procces-h2-span">02</span>Place to get lost
+              </h2>
+              <picture>
+                <img
+                  class="procces-img"
+                  srcset="
+                    ./src/images/procces2.jpg   1x,
+                    ./src/images/procces2@2.jpg 2x
+                  "
+                  src="./src/images/procces2.jpg"
+                  alt="cup"
+                  width="366"
+                />
+              </picture>
+            </li>
+            <li class="procces-li">
+              <h2 class="procces-li-h2">
+                <span class="procces-h2-span">03</span>Proper roasting
+              </h2>
+              <picture>
+                <img
+                  class="procces-img"
+                  srcset="
+                    ./src/images/procces3.jpg   1x,
+                    ./src/images/procces3@2.jpg 2x
+                  "
+                  src="./src/images/procces3.jpg"
+                  alt="cup"
+                  width="366"
+                />
+              </picture>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- history -->
+      <section class="history" id="history">
+        <div class="container div-history">
+          <div class="div-history-img">
+            <picture>
+              <img
+                class="history-img"
+                srcset="
+                  ./src/images/procces1.jpg   1x,
+                  ./src/images/procces1@2.jpg 2x
+                "
+                src="./src/images/procces1.jpg"
+                alt="cup"
+                width="298"
+              />
+            </picture>
+            <picture>
+              <img
+                class="history-img"
+                srcset="
+                  ./src/images/procces2.jpg   1x,
+                  ./src/images/procces2@2.jpg 2x
+                "
+                src="./src/images/procces2.jpg"
+                alt="cup"
+                width="298"
+              />
+            </picture>
+          </div>
+          <div class="div-history-img-long">
+            <picture>
+              <img
+                class="history-img-long"
+                srcset="
+                  ./src/images/historyLong.jpg   1x,
+                  ./src/images/historyLong@2.jpg 2x
+                "
+                src="./src/images/historyLong.jpg"
+                alt="cup"
+                width="298"
+              />
+            </picture>
+          </div>
+          <div class="div-history-text">
+            <p class="history-p-first">Our history</p>
+            <h2 class="history-h2">Create a new story with us</h2>
+            <p class="history-p">
+              mauris rhoncus in imperdiet placerat. vestibu emismd nisl
+              suscirpit ligula volutpat, a feyguat urn maxmaus. cars massa
+              nibhtincidunt. donec et nibh maximus, est eu, mattis nuce.
+              preasent ut quam quis quam venen atis fringilla. morbi vastibulum
+              id tells mmodo mattis. aliauam erat volutpal.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- product -->
+      <section class="product" id="product">
+        <div class="container div-product">
+          <div class="div-product-text">
+            <p class="product-p-firs">Popular Product</p>
+            <h2 class="product-h2">Coffee popular Product</h2>
+          </div>
+          <ul class="product-ul">
+            <li class="product-li">
+              <picture>
+                <img
+                  class="product-img"
+                  srcset="
+                    ./src/images/product.jpg   1x,
+                    ./src/images/product@2.jpg 2x
+                  "
+                  src="./src/images/product.jpg"
+                  alt="coffee"
+                  width="270"
+                />
+              </picture>
+              <div class="div-product-card">
+                <p class="product-card-p">
+                  Coffee
+                  <span class="product-span-svg">
+                    <svg class="product-svg">
+                      <use href="./src/images/icon.svg#icon-star"></use>
+                    </svg>
+                    <svg class="product-svg">
+                      <use href="./src/images/icon.svg#icon-star"></use>
+                    </svg>
+                    <svg class="product-svg">
+                      <use href="./src/images/icon.svg#icon-star"></use>
+                    </svg>
+                    <svg class="product-svg">
+                      <use href="./src/images/icon.svg#icon-star"></use>
+                    </svg>
+                    <svg class="product-svg">
+                      <use href="./src/images/icon.svg#icon-star2"></use>
+                    </svg>
+                  </span>
+                </p>
+                <h2 class="product-card-h2">brazil coffee gred</h2>
+                <p class="product-price">
+                  Price -
+                  <span class="product-price-span">$320.00/</span>
+                  $358
+                </p>
+              </div>
+            </li>
+            <li class="product-li">
+              <picture>
+                <img
+                  class="product-img"
+                  srcset="
+                    ./src/images/product.jpg   1x,
+                    ./src/images/product@2.jpg 2x
+                  "
+                  src="./src/images/product.jpg"
+                  alt="coffee"
+                  width="270"
+                />
+              </picture>
+              <div class="div-product-card">
+                <p class="product-card-p">
+                  Coffee
+                  <span class="product-span-svg">
+                    <svg class="product-svg">
+                      <use href="./src/images/icon.svg#icon-star"></use>
+                    </svg>
+                    <svg class="product-svg">
+                      <use href="./src/images/icon.svg#icon-star"></use>
+                    </svg>
+                    <svg class="product-svg">
+                      <use href="./src/images/icon.svg#icon-star"></use>
+                    </svg>
+                    <svg class="product-svg">
+                      <use href="./src/images/icon.svg#icon-star"></use>
+                    </svg>
+                    <svg class="product-svg">
+                      <use href="./src/images/icon.svg#icon-star2"></use>
+                    </svg>
+                  </span>
+                </p>
+                <h2 class="product-card-h2">brazil coffee gred</h2>
+                <p class="product-price">
+                  Price -
+                  <span class="product-price-span">$320.00/</span>
+                  $358
+                </p>
+              </div>
+            </li>
+            <li class="product-li">
+              <picture>
+                <img
+                  class="product-img"
+                  srcset="
+                    ./src/images/product.jpg   1x,
+                    ./src/images/product@2.jpg 2x
+                  "
+                  src="./src/images/product.jpg"
+                  alt="coffee"
+                  width="270"
+                />
+              </picture>
+              <div class="div-product-card">
+                <p class="product-card-p">
+                  Coffee
+                  <span class="product-span-svg">
+                    <svg class="product-svg">
+                      <use href="./src/images/icon.svg#icon-star"></use>
+                    </svg>
+                    <svg class="product-svg">
+                      <use href="./src/images/icon.svg#icon-star"></use>
+                    </svg>
+                    <svg class="product-svg">
+                      <use href="./src/images/icon.svg#icon-star"></use>
+                    </svg>
+                    <svg class="product-svg">
+                      <use href="./src/images/icon.svg#icon-star"></use>
+                    </svg>
+                    <svg class="product-svg">
+                      <use href="./src/images/icon.svg#icon-star2"></use>
+                    </svg>
+                  </span>
+                </p>
+                <h2 class="product-card-h2">brazil coffee gred</h2>
+                <p class="product-price">
+                  Price -
+                  <span class="product-price-span">$320.00/</span>
+                  $358
+                </p>
+              </div>
+            </li>
+          </ul>
+
+          <button class="product-btn" type="button">View all product</button>
+        </div>
+      </section>
+      <!-- machine -->
+      <section class="machine" id="machine">
+        <div class="container">
+          <div class="div-machine">
+            <div class="div-machine-img">
+              <img
+                class="machine-img"
+                alt="coffee-machine"
+                src="./src/images/coffee-machine.png"
+              />
+            </div>
+            <div class="div-machine-text">
+              <h2 class="machine-h2">Coffee machine, buy for home</h2>
+              <p class="machine-p">
+                mauris rhoncus in imperdiet placerat. vestibu emismd nisl
+                suscirpit ligula volutpat, a feyguat urn maxmaus. cars massa
+                nibhtincidunt. donec et nib maximus, est eu, mattis nuce.
+                preasent ut quam quis quam venen atis fri ngilla. morbi
+                vastibulum id tells mmodo mattis. aliauam erat volutpal.
+              </p>
+              <button class="machine-btn" type="button">Discover now</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- menu -->
+      <section class="menu" id="menu">
+        <div class="container">
+          <div class="div-menu-text">
+            <p class="menu-p">Menu</p>
+            <h2 class="menu-h2">Coffee popular menu</h2>
+          </div>
+          <ul class="menu-ul">
+            <li class="menu-li">
+              <img
+                class="menu-img"
+                srcset="
+                  ./src/images/menu/menu-1.jpg   1x,
+                  ./src/images/menu/menu-1@2.jpg 2x
+                "
+                src="./src/images/menu/menu-1.jpg"
+                alt="cup"
+                width="72"
+              />
+              <p class="menu-card-p">
+                Americano rosted gred<span class="menu-card-span">$12:00</span>
+              </p>
+            </li>
+            <li class="menu-li">
+              <img
+                class="menu-img"
+                srcset="
+                  ./src/images/menu/menu-2.jpg   1x,
+                  ./src/images/menu/menu-2@2.jpg 2x
+                "
+                src="./src/images/menu/menu-2.jpg"
+                alt="cup"
+                width="72"
+              />
+              <p class="menu-card-p">
+                Americano rosted gred
+                <span class="menu-card-span">$12:00</span>
+              </p>
+            </li>
+            <li class="menu-li">
+              <img
+                class="menu-img"
+                srcset="
+                  ./src/images/menu/menu-3.jpg   1x,
+                  ./src/images/menu/menu-3@2.jpg 2x
+                "
+                src="./src/images/menu/menu-3.jpg"
+                alt="cup"
+                width="72"
+              />
+              <p class="menu-card-p">
+                Americano rosted gred
+                <span class="menu-card-span">$12:00</span>
+              </p>
+            </li>
+            <li class="menu-li">
+              <img
+                class="menu-img"
+                srcset="
+                  ./src/images/menu/menu-4.jpg   1x,
+                  ./src/images/menu/menu-4@2.jpg 2x
+                "
+                src="./src/images/menu/menu-4.jpg"
+                alt="cup"
+                width="72"
+              />
+              <p class="menu-card-p">
+                Americano rosted gred
+                <span class="menu-card-span">$12:00</span>
+              </p>
+            </li>
+            <li class="menu-li">
+              <img
+                class="menu-img"
+                srcset="
+                  ./src/images/menu/menu-5.jpg   1x,
+                  ./src/images/menu/menu-5@2.jpg 2x
+                "
+                src="./src/images/menu/menu-5.jpg"
+                alt="cup"
+                width="72"
+              />
+              <p class="menu-card-p">
+                Americano rosted gred
+                <span class="menu-card-span">$12:00</span>
+              </p>
+            </li>
+            <li class="menu-li">
+              <img
+                class="menu-img"
+                srcset="
+                  ./src/images/menu/menu-6.jpg   1x,
+                  ./src/images/menu/menu-6@2.jpg 2x
+                "
+                src="./src/images/menu/menu-6.jpg"
+                alt="cup"
+                width="72"
+              />
+              <p class="menu-card-p">
+                Americano rosted gred
+                <span class="menu-card-span">$12:00</span>
+              </p>
+            </li>
+            <li class="menu-li">
+              <img
+                class="menu-img"
+                srcset="
+                  ./src/images/menu/menu-7.jpg   1x,
+                  ./src/images/menu/menu-7@2.jpg 2x
+                "
+                src="./src/images/menu/menu-7.jpg"
+                alt="cup"
+                width="72"
+              />
+              <p class="menu-card-p">
+                Americano rosted gred
+                <span class="menu-card-span">$12:00</span>
+              </p>
+            </li>
+            <li class="menu-li">
+              <img
+                class="menu-img"
+                srcset="
+                  ./src/images/menu/menu-8.jpg   1x,
+                  ./src/images/menu/menu-8@2.jpg 2x
+                "
+                src="./src/images/menu/menu-8.jpg"
+                alt="cup"
+                width="72"
+              />
+              <p class="menu-card-p">
+                Americano rosted gred
+                <span class="menu-card-span">$12:00</span>
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- reviews -->
+      <section class="reviews" id="reviews">
+        <div class="container">
+          <div class="div-reviews-text">
+            <p class="reviews-p">Testimonial</p>
+            <h2 class="reviews-h2">Says our customers</h2>
+          </div>
+          <div class="div-reviews-card">
+            <ul class="reviews-ul">
+              <li class="reviews-li">
+                <div class="div-reviews-li-img">
+                  <img
+                    class="reviews-img"
+                    srcset="
+                      ./src/images/reviews1.jpg   1x,
+                      ./src/images/reviews1@2.jpg 2x
+                    "
+                    src="./src/images/reviews1.jpg"
+                    alt="man"
+                  />
+                  <p class="rewiews-card-p">
+                    Education WP is a special build for effective education &
+                    Learning Management System site. Education WP is the next
+                    generation & one of the best education WordPress themes
+                    which all the strength of eLearning WP..
+                  </p>
+                </div>
+                <div class="reviews-li-sub">
+                  <h3 class="reviews-sub-h3">John Smith</h3>
+                  <p class="reviews-sub-p">Product Designer</p>
+                </div>
+              </li>
+              <li class="reviews-li">
+                <div class="div-reviews-li-img">
+                  <img
+                    class="reviews-img"
+                    srcset="
+                      ./src/images/reviews2.jpg   1x,
+                      ./src/images/reviews2@2.jpg 2x
+                    "
+                    src="./src/images/reviews2.jpg"
+                    alt="girl"
+                  />
+                  <p class="rewiews-card-p">
+                    Education WP is a special build for effective education &
+                    Learning Management System site. Education WP is the next
+                    generation & one of the best education WordPress themes
+                    which all the strength of eLearning WP..
+                  </p>
+                </div>
+                <div class="reviews-li-sub">
+                  <h3 class="reviews-sub-h3">Brett Lee</h3>
+                  <p class="reviews-sub-p">User Experience Designer</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="div-reviews-botom">
+            <button class="reviews-btn-left" type="button">
+              <svg class="reviews-btn-right-svg" width="24">
+                <use href="./src/images/icon.svg#icon-left"></use>
+              </svg>
+            </button>
+            <button class="reviews-btn-right" type="button">
+              <svg class="reviews-btn-left-svg" width="24">
+                <use href="./src/images/icon.svg#icon-right"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- booking -->
+      <section class="booking" id="booking">
+        <div class="container div-booking">
+          <div class="div-booking-img">
+            <picture>
+              <img
+                class="booking-map-img"
+                alt="map"
+                srcset="./src/images/map.jpg 1x, ./src/images/map@2.jpg 2x"
+                src="./src/images/map.jpg"
+              />
+            </picture>
+          </div>
+          <div class="div-booking-reserv">
+            <p class="booking-p">Reservation</p>
+            <h2 class="booking-h2">Booking a table</h2>
+            <div class="div-booking-input">
+              <input class="booking-input" placeholder="person" type="name" />
+              <input class="booking-input" placeholder="date" type="date" />
+              <input class="booking-input" placeholder="time" type="time" />
+            </div>
+            <button class="booking-btn" type="button">BOOK S TABLE</button>
+          </div>
+        </div>
+      </section>
+      <!-- latest -->
+      <section class="latest" id="latest">
+        <div class="container">
+          <div class="div-latest-text">
+            <p class="latest-p">Testimonial</p>
+            <h2 class="latest-h2">Our latest news</h2>
+          </div>
+
+          <ul class="latest-ul">
+            <li class="latest-li">
+              <img
+                class="latest-img"
+                srcset="./src/images/test1.jpg 1x, ./src/images/test1@2.jpg 2x"
+                src="./src/images/test1.jpg"
+                alt="cup"
+              />
+              <div class="div-latest-li-card">
+                <div class="div-latest-li-text">
+                  <p class="latest-li-p">
+                    <span class="latest-li-p-span">By:</span>rasaline
+                  </p>
+                  <p class="latest-li-date">15.12.2024</p>
+                </div>
+                <h3 class="latest-li-card-h3">
+                  Ideal cocktails from barmen....
+                </h3>
+                <a class="latest-li-card-a" href=""
+                  >Read More
+                  <svg class="latest-li-card-svg">
+                    <use href="./src/images/icon.svg#icon-right"></use>
+                  </svg>
+                </a>
+              </div>
+            </li>
+            <li class="latest-li">
+              <img
+                class="latest-img"
+                srcset="./src/images/test2.jpg 1x, ./src/images/test2@2.jpg 2x"
+                src="./src/images/test1.jpg"
+                alt="cup"
+              />
+              <div class="div-latest-li-card">
+                <div class="div-latest-li-text">
+                  <p class="latest-li-p">
+                    <span class="latest-li-p-span">By:</span>rasaline
+                  </p>
+                  <p class="latest-li-date">15.12.2024</p>
+                </div>
+                <h3 class="latest-li-card-h3">
+                  Ideal cocktails from barmen....
+                </h3>
+                <a class="latest-li-card-a" href=""
+                  >Read More
+                  <svg class="latest-li-card-svg">
+                    <use href="./src/images/icon.svg#icon-right"></use>
+                  </svg>
+                </a>
+              </div>
+            </li>
+            <li class="latest-li">
+              <img
+                class="latest-img"
+                srcset="
+                  ./src/images/procces1.jpg   1x,
+                  ./src/images/procces1@2.jpg 2x
+                "
+                src="./src/images/procces1.jpg"
+                alt="cup"
+              />
+              <div class="div-latest-li-card">
+                <div class="div-latest-li-text">
+                  <p class="latest-li-p">
+                    <span class="latest-li-p-span">By:</span>rasaline
+                  </p>
+                  <p class="latest-li-date">15.12.2024</p>
+                </div>
+                <h3 class="latest-li-card-h3">
+                  Ideal cocktails from barmen....
+                </h3>
+                <a class="latest-li-card-a" href=""
+                  >Read More
+                  <svg class="latest-li-card-svg">
+                    <use href="./src/images/icon.svg#icon-right"></use>
+                  </svg>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer class="footer" id="footer">
+      <div class="container div-footer">
+        <a class="logo-footer" href="./index.html">
+          <svg class="footer-svg-logo" width="72" height="60">
+            <use
+              href="./src/images/icon.svg#icon-Logo"
+              class="footer-icon-logo"
+            ></use>
+          </svg>
+          <ul class="footer-ul">
+            <li class="footer-li">
+              <a class="footer-li-a" href="./index.html">Home</a>
+            </li>
+            <li class="footer-li">
+              <a class="footer-li-a" href="#booking">Rerervation</a>
+            </li>
+            <li class="footer-li">
+              <a class="footer-li-a" href="#menu">Menu</a>
+            </li>
+            <li class="footer-li">
+              <a class="footer-li-a" href="#hero">About</a>
+            </li>
+            <li class="footer-li">
+              <a class="footer-li-a" href="#machine">Pages</a>
+            </li>
+            <li class="footer-li">
+              <a class="footer-li-a" href="#product">Shop</a>
+            </li>
+            <li class="footer-li">
+              <a class="footer-li-a" href="#reviews">Blogs</a>
+            </li>
+          </ul>
+        </a>
+        <div class="div-footer-input">
+          <input
+            class="footer-input"
+            type="email"
+            placeholder="Enter Your Email"
+          />
+          <button class="footer-btn" type="submit">
+            <svg class="footer-input-svg">
+              <use href="./src/images/icon.svg#icon-right"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="div-footer-copy">
+        <p class="footer-copy">m-Soft © 2024. All rights reserved.</p>
+      </div>
+    </footer>
   </body>
 </html>
