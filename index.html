@@ -26,6 +26,10 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link href="./src/style.css" rel="stylesheet" />
   </head>
   <body>
@@ -492,74 +496,173 @@
           </ul>
         </div>
       </section>
-      <!-- reviews -->
+      <!--reviews-->
       <section class="reviews" id="reviews">
         <div class="container">
-          <div class="div-reviews-text">
-            <p class="reviews-p">Testimonial</p>
-            <h2 class="reviews-h2">Says our customers</h2>
-          </div>
-          <div class="div-reviews-card">
-            <ul class="reviews-ul">
-              <li class="reviews-li">
-                <div class="div-reviews-li-img">
-                  <img
-                    class="reviews-img"
-                    srcset="
-                      ./src/images/reviews1.jpg   1x,
-                      ./src/images/reviews1@2.jpg 2x
-                    "
-                    src="./src/images/reviews1.jpg"
-                    alt="man"
-                  />
-                  <p class="rewiews-card-p">
-                    Education WP is a special build for effective education &
-                    Learning Management System site. Education WP is the next
-                    generation & one of the best education WordPress themes
-                    which all the strength of eLearning WP..
-                  </p>
+          <div class="swiper-container">
+            <div class="div-reviews-text">
+              <p class="reviews-p">Testimonial</p>
+              <h2 class="reviews-h2">Says our customers</h2>
+            </div>
+            <div class="div-reviews-card">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="reviews-li">
+                    <div class="div-reviews-li-img">
+                      <img
+                        class="reviews-img"
+                        srcset="
+                          ./src/images/reviews1.jpg   1x,
+                          ./src/images/reviews1@2.jpg 2x
+                        "
+                        src="./src/images/reviews1.jpg"
+                        alt="man"
+                      />
+                      <p class="reviews-card-p">
+                        Education WP is a special build for effective education
+                        & Learning Management System site.
+                      </p>
+                    </div>
+                    <div class="reviews-li-sub">
+                      <h3 class="reviews-sub-h3">John Smith</h3>
+                      <p class="reviews-sub-p">Product Designer</p>
+                    </div>
+                  </div>
                 </div>
-                <div class="reviews-li-sub">
-                  <h3 class="reviews-sub-h3">John Smith</h3>
-                  <p class="reviews-sub-p">Product Designer</p>
+                <div class="swiper-slide">
+                  <div class="reviews-li">
+                    <div class="div-reviews-li-img">
+                      <img
+                        class="reviews-img"
+                        srcset="
+                          ./src/images/reviews2.jpg   1x,
+                          ./src/images/reviews2@2.jpg 2x
+                        "
+                        src="./src/images/reviews2.jpg"
+                        alt="man"
+                      />
+                      <p class="reviews-card-p">
+                        Education WP is a special build for effective education
+                        & Learning Management System site.
+                      </p>
+                    </div>
+                    <div class="reviews-li-sub">
+                      <h3 class="reviews-sub-h3">John Smith</h3>
+                      <p class="reviews-sub-p">Product Designer</p>
+                    </div>
+                  </div>
                 </div>
-              </li>
-              <li class="reviews-li">
-                <div class="div-reviews-li-img">
-                  <img
-                    class="reviews-img"
-                    srcset="
-                      ./src/images/reviews2.jpg   1x,
-                      ./src/images/reviews2@2.jpg 2x
-                    "
-                    src="./src/images/reviews2.jpg"
-                    alt="girl"
-                  />
-                  <p class="rewiews-card-p">
-                    Education WP is a special build for effective education &
-                    Learning Management System site. Education WP is the next
-                    generation & one of the best education WordPress themes
-                    which all the strength of eLearning WP..
-                  </p>
+                <div class="swiper-slide">
+                  <div class="reviews-li">
+                    <div class="div-reviews-li-img">
+                      <img
+                        class="reviews-img"
+                        srcset="
+                          ./src/images/reviews1.jpg   1x,
+                          ./src/images/reviews1@2.jpg 2x
+                        "
+                        src="./src/images/reviews1.jpg"
+                        alt="man"
+                      />
+                      <p class="reviews-card-p">
+                        Education WP is a special build for effective education
+                        & Learning Management System site.
+                      </p>
+                    </div>
+                    <div class="reviews-li-sub">
+                      <h3 class="reviews-sub-h3">John Smith</h3>
+                      <p class="reviews-sub-p">Product Designer</p>
+                    </div>
+                  </div>
                 </div>
-                <div class="reviews-li-sub">
-                  <h3 class="reviews-sub-h3">Brett Lee</h3>
-                  <p class="reviews-sub-p">User Experience Designer</p>
+                <div class="swiper-slide">
+                  <div class="reviews-li">
+                    <div class="div-reviews-li-img">
+                      <img
+                        class="reviews-img"
+                        srcset="
+                          ./src/images/reviews2.jpg   1x,
+                          ./src/images/reviews2@2.jpg 2x
+                        "
+                        src="./src/images/reviews2.jpg"
+                        alt="man"
+                      />
+                      <p class="reviews-card-p">
+                        Education WP is a special build for effective education
+                        & Learning Management System site.
+                      </p>
+                    </div>
+                    <div class="reviews-li-sub">
+                      <h3 class="reviews-sub-h3">John Smith</h3>
+                      <p class="reviews-sub-p">Product Designer</p>
+                    </div>
+                  </div>
                 </div>
-              </li>
-            </ul>
-          </div>
-          <div class="div-reviews-botom">
-            <button class="reviews-btn-left" type="button">
-              <svg class="reviews-btn-right-svg" width="24">
-                <use href="./src/images/icon.svg#icon-left"></use>
-              </svg>
-            </button>
-            <button class="reviews-btn-right" type="button">
-              <svg class="reviews-btn-left-svg" width="24">
-                <use href="./src/images/icon.svg#icon-right"></use>
-              </svg>
-            </button>
+                <div class="swiper-slide">
+                  <div class="reviews-li">
+                    <div class="div-reviews-li-img">
+                      <img
+                        class="reviews-img"
+                        srcset="
+                          ./src/images/reviews1.jpg   1x,
+                          ./src/images/reviews1@2.jpg 2x
+                        "
+                        src="./src/images/reviews1.jpg"
+                        alt="man"
+                      />
+                      <p class="reviews-card-p">
+                        Education WP is a special build for effective education
+                        & Learning Management System site.
+                      </p>
+                    </div>
+                    <div class="reviews-li-sub">
+                      <h3 class="reviews-sub-h3">John Smith</h3>
+                      <p class="reviews-sub-p">Product Designer</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="reviews-li">
+                    <div class="div-reviews-li-img">
+                      <img
+                        class="reviews-img"
+                        srcset="
+                          ./src/images/reviews2.jpg   1x,
+                          ./src/images/reviews2@2.jpg 2x
+                        "
+                        src="./src/images/reviews2.jpg"
+                        alt="man"
+                      />
+                      <p class="reviews-card-p">
+                        Education WP is a special build for effective education
+                        & Learning Management System site.
+                      </p>
+                    </div>
+                    <div class="reviews-li-sub">
+                      <h3 class="reviews-sub-h3">John Smith</h3>
+                      <p class="reviews-sub-p">Product Designer</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Додайте інші swiper-slide елементи тут -->
+              </div>
+            </div>
+            <div class="div-reviews-bottom">
+              <div class="swiper-button-next">
+                <button class="reviews-btn-left" type="button">
+                  <svg class="reviews-btn-right-svg" width="24">
+                    <use href="./src/images/icon.svg#icon-left"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="swiper-button-prev">
+                <button class="reviews-btn-right" type="button">
+                  <svg class="reviews-btn-left-svg" width="24">
+                    <use href="./src/images/icon.svg#icon-right"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -730,5 +833,6 @@
         <p class="footer-copy">m-Soft © 2024. All rights reserved.</p>
       </div>
     </footer>
+    <script src="./src/js/reviews.js"></script>
   </body>
 </html>
